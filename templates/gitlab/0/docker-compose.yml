@@ -1,4 +1,4 @@
-gitlab-server:
+gitlab-server-test:
   ports:
   - 22:22/tcp
   - 80:80/tcp
@@ -9,7 +9,7 @@ gitlab-server:
   volumes_from:
   - gitlab-data
 
-gitlab-data:
+gitlab-data-test:
   labels:
     io.rancher.container.start_once: 'true'
   entrypoint:

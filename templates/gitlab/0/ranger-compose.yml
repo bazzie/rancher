@@ -5,7 +5,7 @@
     Gitlab CE is a free GitHub alternative
   minimum_rancher_version: v0.56.0
   maintainer: "Alexis Ducastel <alexis@ducastel.net>"
-  uuid: gitlab-0
+  uuid: gitlabbas-0
   questions:
     - variable: "gitlab_hostname"
       description: "Gitlab hostname"
@@ -14,7 +14,7 @@
       default: "git.example.com"
       type: "string"
 
-gitlab-server:
+gitlab-server-test:
   scale: 1
   retain_ip: true
   health_check:
@@ -25,6 +25,6 @@ gitlab-server:
     response_timeout: 2000
     healthy_threshold: 2
 
-gitlab-data:
+gitlab-data-test:
   scale: 1
   retain_ip: true
