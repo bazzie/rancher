@@ -1,7 +1,7 @@
 name: Gitlab CE
 description: |
   # Description of the Catalog Entry
-version: 1.0 
+version: 0 
 category: # Category to be used for searching catalog entries
 maintainer: # The maintainer of the catalog entry
 license: # The license 
