@@ -4,7 +4,7 @@ puppet:
   ports:
     - "8140"
   volumes:
-    - "./code:/etc/puppetlabs/code/"
+    - "/etc/puppetlabs/code/"
 puppetdbpostgres:
   image: puppet/puppetdb-postgres
   environment:
