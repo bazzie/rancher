@@ -9,6 +9,7 @@ puppet:
 puppetdbpostgres:
   image: puppet/puppetdb-postgres
   container_name: postgres
+  hostname: postgres
   environment:
     POSTGRES_PASSWORD: puppetdb
     POSTGRES_USER: puppetdb
