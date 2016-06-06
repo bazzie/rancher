@@ -1,0 +1,56 @@
+.catalog:
+  name: Puppet
+  version: 4.0
+  description: |
+    A complete Puppet environment including Puppetdb, puppetboard
+  minimum_rancher_version: v0.56.0
+  maintainer: "Bas Wildemann <bas@wildemann.nl>"
+  uuid: puppet-0
+#  questions:
+#    - variable: "gitlab_hostname"
+#      description: "Gitlab hostname"
+#      label: "Hostname:"
+#      required: true
+#      default: "git.example.com"
+#      type: "string"
+
+puppet:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 80
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+puppetdbpostgres:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 5432
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+puppetdb:
+  scale: 1
+  retain_ip: true
+  health_check:
+    port: 8080
+    interval: 30000
+    unhealthy_threshold: 3
+    strategy: recreate
+    response_timeout: 2000
+    healthy_threshold: 2
+
+puppetboard:
+  scale: 1
+  retain_ip: true
+
+puppetexplorer:
+  scale: 1
+  retain_ip: true
