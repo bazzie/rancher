@@ -18,19 +18,14 @@ puppetdb:
   image: puppet/puppetdb
   hostname: puppetdb
   ports:
-    - 8080:8080
-    - 8081:8081
+    - "8080-8081"
   links: 
-    - puppetdbpostgres:puppetdbpostgres
+    - postgres
 puppetboard:
   image: puppet/puppetboard
   ports:
     - 8000:8000
-  links:
-    - puppetdb:puppetdb
 puppetexplorer:
   image: puppet/puppetexplorer
   ports:
     - 80:80
-  links:
-    - puppetdb:puppetdb
