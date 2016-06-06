@@ -6,7 +6,7 @@ puppet:
     - 8140:8140
   volumes:
     - "/etc/puppetlabs/code/"
-puppetdbpostgres:
+postgres:
   image: puppet/puppetdb-postgres
   container_name: postgres
   hostname: postgres
@@ -19,7 +19,7 @@ puppetdb:
   image: puppet/puppetdb
   hostname: puppetdb
   ports:
-    - 8081:8081
+    - 8080:8080
 puppetboard:
   image: puppet/puppetboard
   ports:
