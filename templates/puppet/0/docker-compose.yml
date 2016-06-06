@@ -23,7 +23,11 @@ puppetboard:
   image: puppet/puppetboard
   ports:
     - 8000:8000
+  links:
+    - puppetdb:puppetdb
 puppetexplorer:
   image: puppet/puppetexplorer
   ports:
     - 80:80
+  links:
+    - puppetdb:puppetdb
