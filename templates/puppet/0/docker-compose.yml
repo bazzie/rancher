@@ -19,7 +19,6 @@ puppetdb:
   image: puppet/puppetdb
   hostname: puppetdb
   ports:
-    - 8080:8080
     - 8081:8081
 puppetboard:
   image: puppet/puppetboard
