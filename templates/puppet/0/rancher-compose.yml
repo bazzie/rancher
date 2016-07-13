@@ -54,3 +54,7 @@ puppetboard:
 puppetexplorer:
   scale: 1
   retain_ip: true
+
+puppetclient:
+  scale: 1
+  retain_ip: true

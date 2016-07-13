@@ -28,3 +28,6 @@ puppetexplorer:
   image: puppet/puppetexplorer
   ports:
     - 80:80
+puppetclient:
+  image: puppet/puppet-agent-centos
+
