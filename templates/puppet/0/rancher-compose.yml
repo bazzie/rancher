@@ -1,6 +1,6 @@
 .catalog:
   name: Puppet
-  version: 4.0
+  version: 4.1
   description: |
     A complete Puppet environment including Puppetdb, puppetboard
   minimum_rancher_version: v0.56.0
